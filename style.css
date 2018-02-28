@@ -1,7 +1,25 @@
+.column {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 200px;
+}
+
+/* Clear floats after the columns */
+
+.giff{
+  width:300px;
+  height:300px;
+}
+
+
+
 #searchText{
   animation: textExample 20s infinite;
-	color: green;
-	font-family: Helvetica;
+  color: green;
+  font-family: Helvetica;
   display: inline;
   font-size: 50px;
   text-align:left-center;
@@ -14,7 +32,7 @@
 }
 
 @keyframes example {
-	 0%   {background-color: blue;}
+   0%   {background-color: blue;}
     17%  {background-color: silver;}
     34%  {background-color: blue;}
     51% {background-color: green;}
@@ -69,13 +87,11 @@
   font-size: 25px;
   text-align:left-center;
   margin-left: 20px;
-
-
 }*/
-		
+    
 }
 .btn-primary{
-	margin-top: 20px;
+  margin-top: 20px;
     border: none;
     color: black;
     padding: 20px 32px;
@@ -89,29 +105,29 @@
 box-shadow: 1px 1px 3px green, -1px -1px blue;
 }
 .container2{
-	background-color: #4CAF50; 
-	display: inline;
-	column-rule-style: solid;
+  background-color: #4CAF50; 
+  display: inline;
+  column-rule-style: solid;
 }
 
 /*#image-area
 {
-	
+  
    
     height:20%;
     margin-right:100%;
     
 }*/
 #gifInput{
-	margin-top: 20px;
+  margin-top: 20px;
   margin-left: 40px;
-	background:purple;
-	color:white;
-	font-size: 75px;
-	 width: 900px;
-	 height: 120px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+  background:purple;
+  color:white;
+  font-size: 75px;
+   width: 900px;
+   height: 120px;
+  /*  -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;*/
 }
 
 
@@ -134,16 +150,16 @@ button {
 }
 
 /*#gif-view{
-	width: 655px;
+  width: 655px;
     margin: auto;
-
 }*/
 
 
 
-.gifGiphy {
+
+.gifGiphy{
   animation-name: stretch;
-  animation-duration: 1.5s; 
+  animation-duration: 10s; 
   animation-timing-function: ease-out; 
   animation-delay: 0s;
   animation-direction: alternate;
@@ -151,12 +167,13 @@ button {
   animation-fill-mode: none;
   animation-play-state: running; 
     border: 3px solid green;
-    padding: 10px;
-    margin-left: 500px;
+    padding: 4px;
+    margin-left: 300px;
 }
 @keyframes stretch {
  0% {
-    transform: scale(1);
+    -webkit-transform: scale(1.8) rotate(0.5deg);
+     transform: scale(1.8) rotate(0.01deg);
     background-color: red;
     border-radius: 200%;
   }
@@ -168,22 +185,6 @@ button {
     background-color: yellow;
    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
